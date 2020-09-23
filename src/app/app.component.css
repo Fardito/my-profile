@@ -1,8 +1,25 @@
-.pdisplay{
+.box-display{
     display: flex;
 }
 
-p{
+.p-text{
     margin: 15px;
+    margin-top: 0px;
     padding: 10px;
 }
+
+.content-inner-wrapper {
+    padding: 0px 150px 75px 150px;
+    margin: 0px 150px;
+    position: relative;
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+
+.Header-nav-item {
+    margin-left: 16px;
+}
+
