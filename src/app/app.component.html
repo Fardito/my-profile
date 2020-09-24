@@ -1,59 +1,36 @@
 <header>
-  <div class="jumbotron bg-white">
+  <div class="jumbotron bg-white mb-0">
     <blockquote class="blockquote text-center">
       <img src="assets/Logo.png">
       <p class="lead">Welcome to my personal page!</p>
     </blockquote>
     <hr class="my-4">
     <div class="containier-fluid-nav text-center">
-      <a class="navbar-brand Header-nav-item" href="#">About</a>
-      <a class="navbar-brand Header-nav-item" href="#">Contact</a>
-      <a class="navbar-brand Header-nav-item" href="#">Hobbies</a>
-      <a class="navbar-brand Header-nav-item" href="#">Map</a>
-      <a class="navbar-brand Header-nav-item" href="#">PortFolio</a>
+      <a class="navbar-brand Header-nav-item" routerLink="/" routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{exact: true}">About</a>
+      <a class="navbar-brand Header-nav-item" routerLink="/contact" routerLinkActive="active-link">Contact</a>
+      <a class="navbar-brand Header-nav-item" routerLink="/map" routerLinkActive="active-link">Map</a>
+      
+      <!-- Basic dropdown -->
+      
+      <a class="navbar-brand Header-nav-item" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">PortFolio</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+      <!-- Basic dropdown -->
 
     </div>
   </div>
 </header>
 
-<body class="text-center">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-md-6">
-        <img width="350px" height="300px" src="assets/foto.jpg" class="img-fluid img-thumbnail float-right">
-      </div>
-
-      <div class="col-md-6">
-        
-          <p class="h5">Hello there! I'm Federico</p>
-          <p>I'm a system engineer student and a Front-End web developer.</p>
-          <p>
-            I love to solve problems and get things done, so I decided to start using my skills in new ways by doing my
-            personal web page.
-            My efforts are focused on improving my web development skills, because i really want to work with other
-            people and make and impact
-            in people's life.
-          </p>
-          <p class="lead">"Leave this world a little better than you find it."</p>
-          <p></p>
-
-          <p>Say hi on Twitter <a href="https://twitter.com/Fardiito">@Fardiito</a></p>
-        
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-
+<body>
+  <router-outlet></router-outlet>
 </body>
 
 <!-- Footer -->
@@ -67,7 +44,7 @@
 
       <!-- Grid column -->
       <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
+        <div class="mb-5 mt-3 flex-center">
 
           <!-- Facebook -->
           <a class="fb-ic" href="https://www.facebook.com/Fardiito/">
@@ -77,8 +54,8 @@
           <a class="tw-ic" href="https://twitter.com/Fardiito">
             <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
+          <!-- Angular -->
+          <a class="gplus-ic" href="https://angular.io/">
             <i class="fab fa-angular fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
           <!--Linkedin -->
