@@ -8,6 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 @ViewChild('f') slForm: NgForm;
+
+userActivated = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,5 +22,9 @@ export class ContactComponent implements OnInit {
 
   onSubmit(form: NgForm){
     form.reset();
+  }
+
+  onActivate(){
+    this.userActivated = true;
   }
 }
