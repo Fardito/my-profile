@@ -26,5 +26,11 @@ userActivated = false;
 
   onActivate(){
     this.userActivated = true;
+    let user = {
+      firstName: this.slForm.value['first-name'],
+      lastName: this.slForm.value['last-name'],
+      email: this.slForm.value['email'],
+      message: this.slForm.value['message'],
+    }
   }
 }

@@ -2,15 +2,15 @@
   <div class="jumbotron bg-white mb-0">
     <blockquote class="blockquote text-center">
       <img src="assets/Logo.png">
-      <p class="lead">Welcome to my personal page!</p>
+      <p class="lead">¡Bienvenido a mi página personal!</p>
     </blockquote>
     <hr class="my-4">
     <div class="containier-fluid-nav text-center">
-      
+
       <a class="navbar-brand Header-nav-item" routerLink="/" routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{exact: true}">About</a>
-      <a class="navbar-brand Header-nav-item" routerLink="/contact" routerLinkActive="active-link">Contact</a>
-      <a class="navbar-brand Header-nav-item" routerLink="/map" routerLinkActive="active-link">Map</a>
+        [routerLinkActiveOptions]="{exact: true}">Sobre mi</a>
+      <a class="navbar-brand Header-nav-item" routerLink="/contact" routerLinkActive="active-link">Contacto</a>
+      <a class="navbar-brand Header-nav-item" routerLink="/map" routerLinkActive="active-link">Mapa</a>
       <a class="navbar-brand Header-nav-item" routerLink="/portfolio" routerLinkActive="active-link">PortFolio</a>
 
     </div>
@@ -18,7 +18,12 @@
 </header>
 
 <body>
-  <router-outlet></router-outlet>
+  <article>
+
+
+      <router-outlet></router-outlet>
+
+  </article>
 </body>
 
 <!-- Footer -->
